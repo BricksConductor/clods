@@ -4,6 +4,7 @@
   "description": "A transmission based web interface for webtorrent",
   "main": "index.js",
   "scripts": {
+    "start": "webtorrent-webui",
     "clean": "rm -rf tests/fixture/tf/state.json tests/fixture/tf/Leaves* tests/fixture/data/Leaves*",
     "startTest": "node app.js -p 9999 -t tests/fixture/tf -d tests/fixture/data &",
     "stopTest": "kill `lsof -ti tcp:9999`",
