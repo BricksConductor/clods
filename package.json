@@ -4,7 +4,7 @@
   "description": "A transmission based web interface for webtorrent",
   "main": "index.js",
   "scripts": {
-    "start": "webtorrent-webui -p 3000",
+    "start": "node app.js -l gleaming-pig-kerchief.cyclic.cloud -p 3000",
     "clean": "rm -rf tests/fixture/tf/state.json tests/fixture/tf/Leaves* tests/fixture/data/Leaves*",
     "startTest": "node app.js -p 9999 -t tests/fixture/tf -d tests/fixture/data &",
     "stopTest": "kill `lsof -ti tcp:9999`",
